@@ -4,7 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
-  { path: 'list', loadChildren: './list/list.module#ListPageModule' }
+  { path: 'list', loadChildren: './list/list.module#ListPageModule' },
+  { path: 'welcome', loadChildren: './welcome/welcome.module#WelcomePageModule' }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
